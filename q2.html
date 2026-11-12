@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 2</title>
+</head>
+<body>
+
+  <input type="text" id="userInput" placeholder="Enter a number">
+  <button onclick="checkInput()">Check</button>
+
+  <script>
+    function checkInput() {
+      let value = document.getElementById("userInput").value;
+      let number = Number(value);
+
+      if (value.trim() === "" || isNaN(number)) {
+        alert("Please insert a number!");
+      } else if (number < 10) {
+        alert("The number is lower than 10");
+      } else if (number > 10) {
+        alert("The number is higher than 10");
+      } else {
+        alert("The number is equal to 10");
+      }
+    }
+  </script>
+
+</body>
+</html>
